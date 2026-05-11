@@ -1,0 +1,39 @@
+| Operator | Meaning             | Example  | Result  |
+| -------- | ------------------- | -------- | ------- |
+| `==`     | equal hai?          | `8 == 8` | `true`  |
+| `!=`     | equal nahi hai?     | `8 != 5` | `true`  |
+| `>`      | bara hai?           | `10 > 5` | `true`  |
+| `<`      | chota hai?          | `10 < 5` | `false` |
+| `>=`     | bara ya equal hai?  | `8 >= 8` | `true`  |
+| `<=`     | chota ya equal hai? | `8 <= 8` | `true`  |
+
+
+Truth table
+AND &&
+
+| A     | B     | A && B |
+| ----- | ----- | ------ |
+| true  | true  | true   |
+| true  | false | false  |
+| false | true  | false  |
+| false | false | false  |
+
+
+&& mein sirf dono true hon to true.
+
+OR ||
+
+| A     | B     | A || B |
+| ----- | ----- | ------ |
+| true  | true  | true   |
+| true  | false | true   |
+| false | true  | true   |
+| false | false | false  |
+
+
+NOT !
+
+| A     | !A    |
+| ----- | ----- |
+| true  | false |
+| false | true  |

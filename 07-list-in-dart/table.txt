@@ -1,0 +1,14 @@
+| Method / Property           | Meaning                |
+| --------------------------- | ---------------------- |
+| `list.length`               | total items            |
+| `list.add(value)`           | end mein item add      |
+| `list.addAll([...])`        | multiple items add     |
+| `list.insert(index, value)` | specific index par add |
+| `list.remove(value)`        | value remove           |
+| `list.removeAt(index)`      | index se remove        |
+| `list.contains(value)`      | check value exists     |
+| `list.first`                | first item             |
+| `list.last`                 | last item              |
+| `list.isEmpty`              | list empty hai?        |
+| `list.isNotEmpty`           | list empty nahi hai?   |
+| `list.clear()`              | sab items remove       |

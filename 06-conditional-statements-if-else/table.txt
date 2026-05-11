@@ -1,0 +1,24 @@
+
+Conditional statements mein operators ka use
+
+Mostly conditions mein ye operators use hotay hain:
+
+==   equal hai?
+!=   equal nahi hai?
+>    bara hai?
+<    chota hai?
+>=   bara ya equal hai?
+<=   chota ya equal hai?
+&&   AND
+||   OR
+!    NOT
+
+
+Short summary ==
+
+if       = sirf true condition par code chale
+else     = agar if false ho jaye
+else if  = multiple conditions ke liye
+nested if = if ke andar if
+switch   = fixed values compare karne ke liye
+ternary  = short if else
