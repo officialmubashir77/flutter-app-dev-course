@@ -1,0 +1,39 @@
+| Method / Property                       | Meaning                                                         |
+| --------------------------------------- | --------------------------------------------------------------- |
+| `list.sort()`                           | list ko ascending order mein sort karta hai                     |
+| `list.sort((a, b) => a.compareTo(b))`   | list ko ascending order mein sort karta hai                     |
+| `list.sort((a, b) => b.compareTo(a))`   | list ko descending order mein sort karta hai                    |
+| `List.from(list)`                       | original list ki copy banata hai                                |
+| `list.reversed`                         | list ko reverse order mein return karta hai                     |
+| `list.reversed.toList()`                | reversed result ko normal list mein convert karta hai           |
+| `list.removeWhere((item) => condition)` | condition true hone par item remove karta hai                   |
+| `name.startsWith('A')`                  | check karta hai name `A` se start hota hai ya nahi              |
+| `city.length`                           | city/name/string ke total characters count karta hai            |
+| `mark < 50`                             | check karta hai mark 50 se kam hai ya nahi                      |
+| `city.length > 7`                       | check karta hai city name ke characters 7 se zyada hain ya nahi |
+| `print(list)`                           | list ko output mein show karta hai                              |
+
+| Concept                   | Meaning                                                                |
+| ------------------------- | ---------------------------------------------------------------------- |
+| Ascending sort            | A to Z ya small to large sorting                                       |
+| Descending sort           | Z to A ya large to small sorting                                       |
+| Original list safe rakhna | `List.from()` se copy bana kar original list ko change hone se bachana |
+| Direct sort               | original list ko directly sort karna                                   |
+| Reverse                   | list ko ulta order mein show karna, bina sorting ke                    |
+| Conditional remove        | condition ke basis par list se items remove karna                      |
+| String condition          | names/cities par condition lagana, jaise `startsWith()` ya `length`    |
+| Number condition          | numbers/marks par condition lagana, jaise `<`, `>`, `>=`, `<=`         |
+
+| Code                                                | Simple Meaning                                                        |
+| --------------------------------------------------- | --------------------------------------------------------------------- |
+| `studentNames.sort()`                               | names ko A to Z order mein arrange karta hai                          |
+| `studentNames.sort((a, b) => a.compareTo(b))`       | names ko A to Z order mein arrange karta hai                          |
+| `studentNames.sort((a, b) => b.compareTo(a))`       | names ko Z to A order mein arrange karta hai                          |
+| `numbers.sort()`                                    | numbers ko small to large order mein arrange karta hai                |
+| `numbers.sort((a, b) => b.compareTo(a))`            | numbers ko large to small order mein arrange karta hai                |
+| `var ascendingNames = List.from(studentNames)`      | `studentNames` ki copy bana kar `ascendingNames` mein store karta hai |
+| `newCities.reversed.toList()`                       | cities ko reverse order mein normal list bana kar show karta hai      |
+| `marks.removeWhere((mark) => mark < 50)`            | 50 se kam marks list se remove karta hai                              |
+| `names.removeWhere((name) => name.startsWith('A'))` | `A` se start hone wale names remove karta hai                         |
+| `cityNames.removeWhere((city) => city.length > 7)`  | 7 se zyada characters wali city names remove karta hai                |
+| `print('Original List: $studentNames')`             | original list ko output mein show karta hai                           |
