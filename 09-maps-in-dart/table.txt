@@ -1,0 +1,49 @@
+| Method / Property                   | Meaning                                                            |
+| ----------------------------------- | ------------------------------------------------------------------ |
+| `Map<String, dynamic>`              | map jisme key String hogi aur value kisi bhi type ki ho sakti hai  |
+| `{}`                                | map banane ke liye curly braces use hotay hain                     |
+| `map['key']`                        | key ke through value access karta hai                              |
+| `map.keys`                          | map ki saari keys return karta hai                                 |
+| `map.values`                        | map ki saari values return karta hai                               |
+| `map.length`                        | map mein total key-value pairs count karta hai                     |
+| `map.isEmpty`                       | check karta hai map empty hai ya nahi                              |
+| `map.isNotEmpty`                    | check karta hai map empty nahi hai                                 |
+| `map['newKey'] = value`             | map mein new item add karta hai ya existing value update karta hai |
+| `map.putIfAbsent(key, () => value)` | key exist na kare to value add karta hai                           |
+| `map.addAll({...})`                 | ek sath multiple key-value pairs add karta hai                     |
+| `map.containsKey(key)`              | check karta hai key map mein exist karti hai ya nahi               |
+| `map.containsValue(value)`          | check karta hai value map mein exist karti hai ya nahi             |
+| `map.remove(key)`                   | key ke basis par item remove karta hai                             |
+| `map.forEach((key, value) {})`      | map ke saare key-value pairs par loop chalata hai                  |
+| `List<Map<String, dynamic>>`        | list ke andar multiple maps store karta hai                        |
+
+
+| Concept        | Meaning                                                |
+| -------------- | ------------------------------------------------------ |
+| Key-value pair | data ko name aur value ki form mein store karna        |
+| Key            | jis naam se value access hoti hai, jaise `name`, `age` |
+| Value          | actual data, jaise `Mubashir`, `21`                    |
+| Dynamic value  | value String, int, bool, List kuch bhi ho sakti hai    |
+| Single Map     | ek object/student/product ka data store karna          |
+| List of Maps   | multiple students/products ka data store karna         |
+| Access value   | `studentInfo['name']` se value get karna               |
+| Add value      | `studentInfo['email'] = '...'` se value add karna      |
+| Update value   | same key par new value assign karna                    |
+| Remove value   | `remove()` se key-value pair delete karna              |
+| Loop on map    | `forEach()` se saara map read karna                    |
+
+
+| Code                                                             | Simple Meaning                                       |
+| ---------------------------------------------------------------- | ---------------------------------------------------- |
+| `studentInfo['age']`                                             | student ki age get karta hai                         |
+| `studentInfo.keys`                                               | studentInfo ki saari keys show karta hai             |
+| `studentInfo.values`                                             | studentInfo ki saari values show karta hai           |
+| `studentInfo['address'] = '123 Main Street'`                     | address add karta hai                                |
+| `studentInfo['age'] = 22`                                        | age update karta hai                                 |
+| `studentInfo.putIfAbsent('email', () => 'mubashir@example.com')` | email key na ho to email add karta hai               |
+| `studentInfo.addAll({'phone': '...', 'gender': 'Male'})`         | phone aur gender ek sath add karta hai               |
+| `studentInfo.containsKey('name')`                                | check karta hai name key exist karti hai ya nahi     |
+| `studentInfo.containsValue('Lahore')`                            | check karta hai Lahore value exist karti hai ya nahi |
+| `studentInfo.remove('address')`                                  | address remove karta hai                             |
+| `studentInfo.forEach((key, value) {})`                           | har key aur value ko one by one read karta hai       |
+| `students[0]['name']`                                            | students list ke first student ka name get karta hai |

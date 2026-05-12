@@ -1,0 +1,43 @@
+| Method / Property                            | Meaning                                                           |
+| -------------------------------------------- | ----------------------------------------------------------------- |
+| `Map<String, dynamic>`                       | map jisme key `String` aur value kisi bhi type ki ho sakti hai    |
+| `map['key']`                                 | key ke through value access karta hai                             |
+| `map.addAll({...})`                          | ek sath multiple key-value pairs add karta hai                    |
+| `map.removeWhere((key, value) => condition)` | condition true hone par key-value pair remove karta hai           |
+| `value is String`                            | check karta hai value String type ki hai ya nahi                  |
+| `value.startsWith('C')`                      | check karta hai String value `C` se start hoti hai ya nahi        |
+| `map.containsKey('name')`                    | check karta hai map mein `name` key exist karti hai ya nahi       |
+| `map.containsValue('Mubashir')`              | check karta hai map mein `Mubashir` value exist karti hai ya nahi |
+| `Map.fromIterables(keys, values)`            | do lists se map banata hai                                        |
+| `List<Map<String, dynamic>>`                 | list ke andar multiple maps store karta hai                       |
+| `students[0]['name']`                        | first student ka name access karta hai                            |
+| `...map`                                     | spread operator, map ke items ko doosre map mein merge karta hai  |
+| `for loop`                                   | list ke items one by one print karta hai                          |
+
+
+| Concept      | Meaning                                                            |
+| ------------ | ------------------------------------------------------------------ |
+| Simple Map   | ek student/user/product ka data key-value pair mein store karna    |
+| Key          | value ko access karne ka naam, jaise `name`, `age`, `gender`       |
+| Value        | actual data, jaise `Mubashir`, `21`, `Male`                        |
+| Add data     | map mein new key-value pair add karna                              |
+| Update data  | existing key ki value change karna                                 |
+| Remove data  | condition ya key ke basis par data remove karna                    |
+| Merge maps   | multiple maps ko combine karna                                     |
+| Overwrite    | same key repeat ho to last value old value ko replace kar deti hai |
+| List of Maps | multiple students/products/users ka data store karna               |
+| Nested Data  | list ke andar map, map ke andar map/list jaisa complex data        |
+
+
+| Code                                                                                | Simple Meaning                                        |
+| ----------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| `studentInfo['name']`                                                               | student ka name get karta hai                         |
+| `studentInfo.addAll({'hobby': 'Cooking'})`                                          | hobby map mein add karta hai                          |
+| `studentInfo.removeWhere((key, value) => value is String && value.startsWith('C'))` | C se start hone wali String values remove karta hai   |
+| `studentInfo.addAll(additionalInfo)`                                                | additionalInfo ka data studentInfo mein add karta hai |
+| `studentInfo = {...studentInfo, ...additionalInfoTwo}`                              | studentInfo aur additionalInfoTwo ko merge karta hai  |
+| `Map.fromIterables(keys, values)`                                                   | keys aur values lists ko mila kar map banata hai      |
+| `studentInfo.containsKey('name')`                                                   | check karta hai `name` key hai ya nahi                |
+| `studentInfo.containsValue('Pakistan')`                                             | check karta hai `Pakistan` value hai ya nahi          |
+| `students[0]['name']`                                                               | first student ka name get karta hai                   |
+| `abc[1]['hello'][1][1]`                                                             | nested list/map ke andar se final value get karta hai |
